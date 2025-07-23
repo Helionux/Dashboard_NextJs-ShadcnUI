@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Create "dashboard",
+  title: "Create dashboard",
   description: "Tuto sur la création d'un dashboard avec Next.JS",
 };
 
@@ -26,24 +26,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
       >
-        <ThemeProvider
+          <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-        >
-          <AppSidebar />
-          <main className="w-full">
-            <Navbar />
-            <div className="px-4">
-              {children}
-            </div>
-          </main>
-        </ThemeProvider>
+            >
+
+            <AppSidebar />
+            <main className="w-full">
+              <Navbar />
+              <div className="px-4">
+                {children}
+              </div>
+            </main>
+            
+          </ThemeProvider>
       </body>
     </html>
   );
