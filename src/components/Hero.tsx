@@ -10,7 +10,8 @@ export function Calendar02() {
   )
 
   return (
-    <Calendar
+  <div>
+      <Calendar
       mode="single"
       defaultMonth={date}
       numberOfMonths={2}
@@ -18,5 +19,10 @@ export function Calendar02() {
       onSelect={setDate}
       className="rounded-lg border shadow-sm"
     />
+
+    <section>
+
+    </section>
+  </div>
   )
 }
