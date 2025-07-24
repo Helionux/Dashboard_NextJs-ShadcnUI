@@ -1,9 +1,8 @@
 import { Calendar, ChevronDown, ChevronUp, Home, Inbox, Plus, Projector, Search, Settings, User2 } from "lucide-react"
-import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuBadge, SidebarMenuButton, SidebarMenuItem, SidebarSeparator } from "./ui/sidebar"
+import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuBadge, SidebarMenuButton, SidebarMenuItem, SidebarMenuSub, SidebarMenuSubButton, SidebarMenuSubItem, SidebarSeparator } from "./ui/sidebar"
 import Link from "next/link"
 import Image from "next/image"
-import { DropdownMenu, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
-import { DropdownMenuContent, DropdownMenuItem } from "./ui/dropdown-menu"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible"
 
 const items = [
@@ -89,6 +88,14 @@ const AppSidebar = () => {
                                     </Link>
                                 </SidebarMenuButton>
                             </SidebarMenuItem>
+                            <SidebarMenuItem>
+                                <SidebarMenuButton asChild>
+                                    <Link href="/">
+                                    <Plus />
+                                    Add Project
+                                    </Link>
+                                </SidebarMenuButton>
+                            </SidebarMenuItem>
                         </SidebarMenu>
                     </SidebarGroupContent>
                 </SidebarGroup>
@@ -126,38 +133,46 @@ const AppSidebar = () => {
                             </SidebarGroupContent>
                         </CollapsibleContent>
                     </SidebarGroup>
-                       
-                    <SidebarGroup>
-                        <SidebarGroupLabel asChild>
-                            <CollapsibleTrigger>
-                                 Nested Items
-                                <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
-                            </CollapsibleTrigger>
-                        </SidebarGroupLabel>
-                        <CollapsibleContent>
-                            <SidebarGroupContent>
-                                <SidebarMenu>
-                                    <SidebarMenuItem>
-                                        <SidebarMenuButton asChild>
-                                            <Link href="/">
-                                                <Projector />
-                                                see All Projects
-                                            </Link>
-                                        </SidebarMenuButton>
-                                    </SidebarMenuItem>
-                                    <SidebarMenuItem>
-                                        <SidebarMenuButton asChild>
-                                            <Link href="/">
-                                                <Plus />
-                                                Add Projects
-                                            </Link>
-                                        </SidebarMenuButton>
-                                    </SidebarMenuItem>
-                                </SidebarMenu>
-                            </SidebarGroupContent>
-                        </CollapsibleContent>
-                    </SidebarGroup>
                 </Collapsible>
+
+                    {/* NESTED */}
+
+                <SidebarGroup>
+                    <SidebarGroupLabel>Nested Items</SidebarGroupLabel>
+                    
+                    <SidebarGroupContent>
+                        <SidebarMenu>
+                            <SidebarMenuItem>
+                                <SidebarMenuButton asChild>
+                                    <Link href="/">
+                                    <Projector />
+                                    See All Projects
+                                    </Link>
+                                </SidebarMenuButton>
+                                <SidebarMenuSub>
+                                    <SidebarMenuSubItem>
+                                        <SidebarMenuSubButton asChild>
+                                            <Link href="/">
+                                            <Plus />
+                                            Add Project
+                                            </Link>
+                                        </SidebarMenuSubButton>
+                                    </SidebarMenuSubItem>
+                                    <SidebarMenuSubItem>
+                                        <SidebarMenuSubButton asChild>
+                                            <Link href="/">
+                                            <Plus />
+                                            Add Categories
+                                            </Link>
+                                        </SidebarMenuSubButton>
+                                    </SidebarMenuSubItem>
+                                </SidebarMenuSub>
+                            </SidebarMenuItem>
+                        </SidebarMenu>
+                    </SidebarGroupContent>
+                </SidebarGroup>           
+                
+
             </SidebarContent>
             <SidebarFooter>
                 <SidebarMenu>
