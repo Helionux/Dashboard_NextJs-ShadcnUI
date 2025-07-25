@@ -42,7 +42,7 @@ const AppSidebar = () => {
                     <SidebarMenu>
                         <SidebarMenuButton asChild>
                             <Link href="/">
-                                <Image src="/public/Geek.jpg" alt="logo" width={20} height={20}/>
+                                <Image src="/src/app/assets/Geek.jpg" alt="logo" width={20} height={20}/>
                                 <span>Helionux Dev</span>
                             </Link>
                         </SidebarMenuButton>
