@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Dashboard NextJs + ShadcnUI
 
-First, run the development server:
+Bienvenue sur le projet **Dashboard_NextJs-ShadcnUI**, une base moderne pour la création de dashboards performants, élégants et personnalisables, propulsée par Next.js et ShadcnUI.
+
+## 🚀 À propos du projet
+
+Ce projet sert de point de départ pour développer des applications dashboard avec une architecture moderne, utilisant les dernières technologies du web. Il offre une expérience utilisateur fluide et rapide grâce à Next.js, ainsi qu’une interface soignée et réactive avec ShadcnUI.
+
+## ✨ Fonctionnalités principales
+
+- ⚡️ Application Next.js avec configuration prête à l’emploi
+- 🎨 Intégration de ShadcnUI pour une interface utilisateur élégante et accessible
+- 🔥 Support TypeScript pour une base de code robuste et maintenable
+- 💨 Optimisation automatique des polices avec `next/font` et intégration de la police Geist
+- 🛠️ Structure modulaire pour une personnalisation et une extension faciles
+
+## 🛠️ Technologies utilisées
+
+- [Next.js](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [ShadcnUI](https://ui.shadcn.com/)
+- [Vercel](https://vercel.com/) (pour le déploiement recommandé)
+
+## 🚩 Installation rapide
+
+Clone le projet :
+
+```bash
+git clone https://github.com/Helionux/Dashboard_NextJs-ShadcnUI.git
+cd Dashboard_NextJs-ShadcnUI
+```
+
+Installe les dépendances :
+
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+# ou
+bun install
+```
+
+Lance le serveur de développement :
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur pour voir le résultat.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📚 Ressources complémentaires
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Documentation Next.js](https://nextjs.org/docs)
+- [Tutoriel interactif Next.js](https://nextjs.org/learn)
+- [Documentation ShadcnUI](https://ui.shadcn.com/docs)
 
-## Learn More
+## 🚀 Déploiement
 
-To learn more about Next.js, take a look at the following resources:
+Le moyen le plus simple de mettre en ligne l’application est d’utiliser [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+N’hésite pas à contribuer, signaler des problèmes ou proposer des améliorations !
